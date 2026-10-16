@@ -456,6 +456,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 502918475138349020, guid: 5decb86a03c94ce4ebc2eabd97bafcd1, type: 3}
+      propertyPath: faceMoveDirection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 504336360112203994, guid: 5decb86a03c94ce4ebc2eabd97bafcd1, type: 3}
       propertyPath: m_Name
       value: Player
