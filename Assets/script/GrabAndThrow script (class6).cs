@@ -6,6 +6,7 @@ public class GrabAndThrow : MonoBehaviour
 {
     [SerializeField] private Transform holdPoint;
     [SerializeField] private float throwForce = 8f;
+    [SerializeField] private Animator animator;
 
     private GameObject nearbyObject;
     private GameObject heldObject;
@@ -29,7 +30,7 @@ public class GrabAndThrow : MonoBehaviour
     {
         if (nearbyObject == null)
             return;
-
+        animator.SetTrigger("Grab");
         heldObject = nearbyObject;
         nearbyObject = null;
 
