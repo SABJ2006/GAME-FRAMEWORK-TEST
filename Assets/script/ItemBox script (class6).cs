@@ -4,7 +4,7 @@ public class ItemBox : MonoBehaviour
 {
     private int itemsPlaced = 0;
     private int score = 0;
-    [SerializeField] private GameUI gameUI;
+    //[SerializeField] private GameUI gameUI;
 
     void OnTriggerEnter(Collider other)
     {
@@ -18,15 +18,15 @@ public class ItemBox : MonoBehaviour
 
         itemsPlaced++;
 
-        if (!crop.GetIsRotten())
+        /*if (!crop.GetIsRotten())
         {
             gameUI.AddScore(crop.GetScoreValue());
-        }
+        }*/
 
         Debug.Log("Crops placed: " + itemsPlaced);
         Debug.Log("Score: " + score);
 
-        gameUI.UpdateCropsPlaced(itemsPlaced);
+//        gameUI.UpdateCropsPlaced(itemsPlaced);}
 
         Destroy(crop.gameObject);
     }
